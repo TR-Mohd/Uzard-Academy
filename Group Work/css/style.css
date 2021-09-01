@@ -1,0 +1,513 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+nav{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    font-family: montserrat;
+    position: fixed;
+    top: 0;
+    left: 0;    
+    z-index: 10000;
+    transition: .3s;
+}
+
+
+
+
+label.logo{
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    line-height: 70px;
+    left: 40px;
+    cursor: pointer;
+    font-family: 'sofia';
+}
+
+label.logo > small{
+    font-weight: lighter;
+    font-family: sans-serif;
+}
+
+label.logo a{
+    color: white;
+}
+
+label.logo:hover a{
+    color: rgb(122, 174, 209);
+}
+
+nav #search-bar{
+    width: 480px;
+    height: 40px;
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 350px;
+    border-radius: 20px;
+    font-size: 20px;
+    background: linear-gradient(to right, rgba(70, 196, 254, 0.781), rgba(0, 254, 254, 0.781));
+    display: none;
+}
+
+nav #search-btn{
+    font-size: 23px;
+    float: right;
+    color: white;
+    position: relative;
+    line-height: 70px;
+    right: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+nav #search-btn #srch-bar{
+    padding: 10px;
+    border-radius: 18px;
+}
+
+nav #search-btn #srch-bar:hover{
+    background-color: rgba(0, 0, 0, 0.158);
+}
+
+nav #search-bar #search{
+    width: 85%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: 450;
+    letter-spacing: 1.5px;
+    float: left;
+    border-radius: 20px;
+    font-size: 17px;
+    padding-left: 20px;
+    border: 0px solid transparent;
+}
+
+nav #search-icon{
+    font-size: 23px;
+    float: right;
+    color: black;
+    position: relative;
+    top: 5px;
+    right: 20px;
+    display: block;
+}
+
+nav #search-icon:hover{
+    color: rgb(61, 61, 61);
+}
+
+/* Responsive At (1515px) From Screen Width */
+@media (max-width: 1515px){
+
+    nav #search-bar{
+        width: 440px;
+    }
+}
+
+/* Responsive At (1418px) From Screen Width */
+@media (max-width: 1480px){
+
+    nav #search-bar{
+        width: 370px;
+    }
+}
+
+/* Responsive At (1365px) From Screen Width */
+@media (max-width: 1415px){
+
+    nav #search-bar{
+        width: 320px;
+    }
+}
+
+/* Responsive At (1335px) From Screen Width */
+@media (max-width: 1360px){
+
+    nav #search-bar{
+        width: 300px;
+    }
+}
+
+/* Responsive At (1335px) From Screen Width */
+@media (max-width: 1320px){
+
+    nav #search-bar{
+        width: 260px;
+    }
+
+    nav #search-bar #search{
+        width: 83%;
+        height: 100%;
+        font-size: 17px;
+        padding-left: 20px;
+        border: none;
+    }
+}
+
+
+nav ul{
+    float: right;
+    line-height: 70px;
+    margin-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+    list-style: none;
+}
+
+li a{
+    color: rgb(255, 255, 255) ;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: relative;
+    padding: 0 4px;
+    transition: .3s;
+}
+
+
+
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to right, rgba(70, 202, 254, 0.747), rgba(0, 254, 220, 0.747));
+    height: 3.3px;
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    border-radius: 5px;
+    transition: .6s;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+
+nav ul i{
+    font-size: 50px;
+}
+
+nav label#icon-bars{
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    margin-right: 50px;
+    float: right;
+    line-height: 70px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive At (1515px) From Screen Width */
+@media (max-width: 1515px){
+
+    nav #search-bar{
+        width: 440px;
+    }
+}
+
+/* Responsive At (1418px) From Screen Width */
+@media (max-width: 1480px){
+
+    nav #search-bar{
+        width: 370px;
+    }
+}
+
+/* Responsive At (1365px) From Screen Width */
+@media (max-width: 1415px){
+
+    nav #search-bar{
+        width: 320px;
+    }
+}
+
+/* Responsive At (1335px) From Screen Width */
+@media (max-width: 1360px){
+
+    nav #search-bar{
+        width: 300px;
+    }
+}
+
+/* Responsive At (1335px) From Screen Width */
+@media (max-width: 1320px){
+
+    nav #search-bar{
+        width: 260px;
+    }
+
+    nav #search-bar #search{
+        width: 83%;
+        height: 100%;
+        font-size: 17px;
+        padding-left: 20px;
+        border: none;
+    }
+}
+
+/* First Nav styling */
+.fr-nav{
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(33, 55, 78, 0.904);
+    backdrop-filter: blur(80px);
+    position: relative;
+}
+
+.fr-nav img{
+    width: 550px;
+    position: relative;
+    top: 60px;
+    right: 90px;
+    float: right;
+}
+
+.fr-nav h1{
+    color: rgba(83, 163, 255, 0.904);
+    font-family: 'sofia';
+    font-weight: 600;
+    position: relative;
+    top: 150px;
+    left: 40px;
+}
+
+.fr-nav p{
+    color: rgba(206, 229, 255, 0.904);
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    position: relative;
+    top: 200px;
+    left: 50px;
+}
+
+.fr-nav p span{
+    color: #298dffe7;
+    font-weight: 550;
+}
+
+/* Second Nav styling */
+.sec-nav{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(56, 126, 167);
+    /* background-color: rgb(212, 239, 255); */
+    backdrop-filter: blur(80px);
+    position: relative;
+}
+
+
+
+.sec-nav h1{
+    color: rgb(192, 230, 252);
+    /* color: rgb(0, 79, 124); */
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    position: relative;
+    top: 50px;
+    left: 600px;
+    width: fit-content;
+    padding: 0 5px 5px 5px;
+    border-bottom: 4px solid rgb(192, 230, 252);
+    /* border-bottom: 4px solid rgb(0, 79, 124); */
+}
+
+.sec-nav ol{
+    position: relative;
+    top: 70px;
+    left: 300px;
+}
+
+.sec-nav ol li{
+    margin: 30px;
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 520;
+}
+
+.sec-nav ol li span{
+    color: rgb(173, 225, 255);
+    /* color: rgb(0, 125, 197); */
+    font-size: 26px;
+    font-weight: 700;
+}
+
+/* third Nav styling */
+.third-nav{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(212, 239, 255);
+    /* background-color: rgb(56, 126, 167); */
+    backdrop-filter: blur(80px);
+    position: relative;
+}
+
+
+
+.third-nav h1{
+    color: rgb(0, 79, 124);
+    /* color: rgb(192, 230, 252); */
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    position: relative;
+    top: 50px;
+    left: 550px;
+    width: fit-content;
+    padding: 0 5px 5px 5px;
+    border-bottom: 4px solid rgb(0, 79, 124);
+    /* border-bottom: 4px solid rgb(192, 230, 252); */
+}
+
+.third-nav ol{
+    position: relative;
+    top: 70px;
+    left: 300px;
+}
+
+.third-nav ol li{
+    margin: 30px;
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: 520;
+}
+
+.third-nav ol li span{
+    color: rgb(0, 125, 197);
+    /* color: rgb(173, 225, 255); */
+    font-size: 26px;
+    font-weight: 700;
+}
+
+
+/* last Nav styling */
+.last-nav{
+    width: 100%;
+    height: 30vh;
+    background-color: rgb(0, 36, 56);
+    backdrop-filter: blur(80px);
+    position: relative;
+}
+
+.last-nav h1{
+    color: rgb(235, 249, 255);
+    font-size: 30px;
+    font-family: 'sofia';
+    position: relative;
+    text-align: center;
+    padding-top: 30px;
+    width: 100%;
+    background-color: rgb(29, 71, 119);
+}
+
+.last-nav h2{
+    color: rgb(234, 249, 255);
+    font-size: 25px;
+    font-family: sans-serif;
+    position: relative;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(29, 71, 119);
+}
+
+.last-nav p{
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 25px;
+    right: 645px;
+}
+
+
+@media (max-width: 1270px){
+
+    li a{
+        font-size: 18px;
+    }
+}
+
+
+/* Responsive At (1100px) From Screen Width */
+
+@media (max-width: 1100px){
+
+    nav ul li{
+        display: inline-block;
+        margin: 0 15px;
+    }
+}
+
+/* Responsive At (1300px) From Screen Width */
+
+@media (max-width: 1300px){
+
+    nav label#icon-bars{
+        display: block;
+    }   
+
+    nav #search-bar{
+        width: 550px;
+    }
+
+        
+    nav{
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    nav ul{
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(255, 255, 255, 0.980);
+        backdrop-filter: blur(50px);
+        transition: .5s;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 30px;
+    }
+
+    nav ul li a{
+        font-size: 22px;
+        padding: 0 6px;
+        color: black;
+    }
+
+    nav ul.show{
+        left: 0;
+    }
+}
